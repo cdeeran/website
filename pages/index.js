@@ -105,7 +105,7 @@ export default function Home() {
           &nbsp;&nbsp;&nbsp;&nbsp;
           <a
             href="../public/cody-deeran-resume.pdf"
-            download="Resume"
+            download="Cody-Deeran-Resume"
             title="Download My Resume"
             target="_blank"
           >
