@@ -1,8 +1,15 @@
 import Head from "next/head";
-import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
-import styles from "../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGitAlt,
+  faGithub,
+  faGithubAlt,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
+import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
+import { faFileContract } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -16,12 +23,20 @@ export default function Home() {
       </section>
       <section className={utilStyles.headingMd}>
         <p>
-          I am software guy that loves to learn and expirement. Whether if it's
-          with a tech stack or on the grill with new receipes and marinades, I
-          enjoy it! I find time to enjoy life, often by hosting BBQ's or
-          shimmying my way onto a dance floor in the night life scene. I love to
-          escape the heat of Arizona by vacationing somewhere with cooler
-          weather, palm trees and water.
+          Hello, I am Cody. I am an Arizona native that studied Computer Science
+          at The University of Arizona. I am a space and tech enthusiast, I love
+          conversing about the resurection of the space race and space
+          exploration. I currently work as an Embedded Software Engineer at
+          Raytheon Technologies. My dream is to work on a space program that
+          will pave way for mankind to travel further into the universe.
+        </p>
+        <p>
+          In my free time, I enjoy BBQing, hanging out with friends and catching
+          the ball game.
+        </p>
+        <p>
+          Thanks for visiting my site! Please feel free to poke around and
+          contact me via one of the methods listed.
         </p>
       </section>
       <section>
@@ -40,6 +55,62 @@ export default function Home() {
         <p>
           Plant and grow your career. Explore a new career or grow your existing
           one in tech.
+        </p>
+        <a href="https://github.com/cdeeran/WeightCoach">
+          <h3>Weight Coach</h3>
+        </a>
+        <p>
+          NLP project using Alexa and AWS. Create a new user and track weight
+          using DynamoDB with creative feedback from Alexa.
+        </p>
+      </section>
+      <section>
+        <h2>Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>C++</li>
+          <li>C</li>
+          <li>Real-Time Operating Systems</li>
+          <li>Embedded Software</li>
+          <li>Object-Oriented Programming</li>
+          <li>SWCM Tools</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>
+          <a
+            href="https://www.github.com/cdeeran"
+            title="Visit My GitHub Page"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faGithub} size="lg" />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href="https://www.linkedin.com/in/codydeeran"
+            title="Visit My LinkedIn"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faLinkedin} size="lg" />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href="mailto:contact@codydeeran.com"
+            title="Email Me"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faPaperPlane} size="lg" />
+          </a>
+          &nbsp;&nbsp;&nbsp;&nbsp;
+          <a
+            href="../public/cody-deeran-resume.pdf"
+            download="Resume"
+            title="Download My Resume"
+            target="_blank"
+          >
+            <FontAwesomeIcon icon={faFileContract} size="lg" />
+          </a>
         </p>
       </section>
     </Layout>
