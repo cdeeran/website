@@ -2,12 +2,7 @@ import Head from "next/head";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faGitAlt,
-  faGithub,
-  faGithubAlt,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
 import { faFileContract } from "@fortawesome/free-solid-svg-icons";
 
@@ -102,15 +97,10 @@ export default function Home() {
           >
             <FontAwesomeIcon icon={faPaperPlane} size="lg" />
           </a>
-          &nbsp;&nbsp;&nbsp;&nbsp;
-          <a
-            href="../public/cody-deeran-resume.pdf"
-            download="Cody-Deeran-Resume"
-            title="Download My Resume"
-            target="_blank"
-          >
+          {/* &nbsp;&nbsp;&nbsp;&nbsp;
+          <a href="cody_deeran_resume.pdf" title="View Resume" target="_blank">
             <FontAwesomeIcon icon={faFileContract} size="lg" />
-          </a>
+          </a> */}
         </p>
       </section>
     </Layout>
