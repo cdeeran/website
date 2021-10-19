@@ -4,7 +4,6 @@ import utilStyles from "../styles/utils.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-regular-svg-icons";
-import { faFileContract } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -27,7 +26,8 @@ export default function Home() {
         </p>
         <p>
           In my free time, I enjoy BBQing, hanging out with friends and catching
-          the ball game.
+          the ball game. I enjoy working on side projects to learn new skills and keep
+          my current ones up to date.
         </p>
         <p>
           Thanks for visiting my site! Please feel free to poke around and
@@ -44,12 +44,21 @@ export default function Home() {
           Integrated with Spotify, it's the prefect at home bartender, written
           in Python.
         </p>
-        <a href="https://careerplant.vercel.app/">
-          <h3>Career Plant</h3>
+        <a href="https://ff-dashboard-6uc5npm9u-siddharthsharma.vercel.app/">
+          <h3>Laces</h3>
         </a>
         <p>
-          Plant and grow your career. Explore a new career or grow your existing
-          one in tech.
+          Fantasy Football analytic website build off of the <a href="https://sleeper.app">Sleeper.app</a> API. Laces
+          offers a smooth UI/UX using Javascript/React with the data analysis power of
+          Python using Flask.
+        </p>
+        <a href="http://resumo-bot.herokuapp.com/">
+          <h3>Resumo Bot</h3>
+        </a>
+        <p>
+          Hackathon project, Resumo Bot is a resumè chat bot for Facebook
+          Messenger and Alexa. Built using Glitch, Python-Flask with NLP and AI
+          powered by Wit.ai
         </p>
         <a href="https://github.com/cdeeran/WeightCoach">
           <h3>Weight Coach</h3>
